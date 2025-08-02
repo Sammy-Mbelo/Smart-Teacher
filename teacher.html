@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Teacher</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #007BFF;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #0056b3;
+    }
+
+    .section {
+      padding: 4em 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1em;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #f5f5f5;
+      color: #666;
+    }
+
+    .testimonial {
+      background: #f0f8ff;
+      padding: 1.5em;
+      margin-bottom: 1em;
+      border-left: 4px solid #007BFF;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75em;
+      margin: 0.5em 0 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    form button {
+      padding: 0.75em 1.5em;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 1em;
+        display: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+
+      .navbar.active .nav-links {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: #007BFF;
+        font-size: 1.5em;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Smart Teacher</div>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+        <li><a href="#testimonials"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+        <li><a href="#partnerships"><i class="fas fa-handshake"></i> Partnerships</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <h1>Welcome to Smart Teacher</h1>
+    <p><strong>Smart Teacher</strong> is a revolutionary educational platform that uses technology to enhance learning. We enable students to access lessons, practice exercises, and purchase revision materials — all from the comfort of their homes or classrooms.</p>
+    <p>Key features include:
+      <ul>
+        <li>Virtual lessons delivered by qualified teachers</li>
+        <li>Revision exercises that are curriculum-aligned</li>
+        <li>Affordable downloadable exam papers</li>
+        <li>24/7 access to study materials</li>
+      </ul>
+    </p>
+    <p>Whether you're a student, a parent, or a school administrator, Smart Teacher offers modern tools that transform learning into a flexible, engaging experience.</p>
+    <img src="https://images.unsplash.com/photo-1601297183300-7a3c44dd597b?auto=format&fit=crop&w=1350&q=80" alt="Teacher and students with laptops">
+    <p><em>Smart Teacher — Where Technology Meets Education.</em></p>
+  </section>
+
+  <section id="about" class="section">
+    <h1>About Us</h1>
+    <p>We are a team of educators, software developers, and digital designers on a mission to reimagine education. We believe that every child deserves access to quality learning regardless of geography or socioeconomic status. Smart Teacher is designed to empower learners, educators, and institutions with tools that are intuitive and effective.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h1>Our Services</h1>
+    <ul>
+      <li>Live and recorded online lessons</li>
+      <li>Student performance tracking</li>
+      <li>Interactive revision exercises</li>
+      <li>Printable mock exams and quizzes</li>
+      <li>Tech support for schools and parents</li>
+    </ul>
+  </section>
+
+  <section id="testimonials" class="section">
+    <h1>Student Testimonials</h1>
+    <div class="testimonial">
+      <p>"Smart Teacher helped me improve my math scores. I can revise whenever I want, and the lessons are so easy to follow!"</p>
+      <strong>– Mary, Grade 8</strong>
+    </div>
+    <div class="testimonial">
+      <p>"I love being able to access past exams and track my progress. It's like having a personal tutor at home."</p>
+      <strong>– Daniel, Form 3</strong>
+    </div>
+  </section>
+
+  <section id="partnerships" class="section">
+    <h1>School Partnerships</h1>
+    <p>We collaborate with schools to implement Smart Teacher's tools into their curriculum. Our platform can be integrated into classrooms or used as a standalone e-learning solution. Benefits include:</p>
+    <ul>
+      <li>Bulk student access and administrative dashboards</li>
+      <li>Teacher training and onboarding</li>
+      <li>Custom curriculum content and exam uploads</li>
+    </ul>
+    <p>Contact us to schedule a demo for your school.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Smart Teacher. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navbar = document.querySelector('.navbar');
+    const toggle = document.querySelector('.menu-toggle');
+    toggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
