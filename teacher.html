@@ -9,8 +9,9 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: white;
-      color: #333;
+      background: url('https://images.unsplash.com/photo-1601297183300-7a3c44dd597b?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
 
     header {
@@ -19,6 +20,9 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      h1, h2, h3, p, li {
+  color: #fff;
+}
     }
 
     .navbar {
@@ -54,17 +58,12 @@
       color: #0056b3;
     }
 
-    .section {
-      padding: 4em 2em;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 1em;
-      border-radius: 8px;
+.section {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark overlay */
+  padding: 4em 2em;
+  max-width: 1000px;
+  margin: 2em auto;
+  border-radius: 10px;
     }
 
     footer {
@@ -251,4 +250,5 @@
   </script>
 </body>
 </html>
+
 
